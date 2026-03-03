@@ -1,0 +1,48 @@
+# =========================
+# Build directory
+# =========================
+build/
+cmake-build-*/
+
+# =========================
+# CMake generated files
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# =========================
+# Binary output
+# =========================
+mini-container
+*.out
+*.o
+*.obj
+*.so
+*.a
+
+# =========================
+# Debug / profiling
+# =========================
+*.log
+*.gdb
+core
+core.*
+vgcore.*
+
+# =========================
+# Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
