@@ -136,6 +136,9 @@ void Container::setupCgroup(pid_t pid)
     writeFile(cgroupBasePath + "/memory.max", std::to_string(memoryLimitMB * 1024L * 1024L));
     // Add pid
     writeFile(cgroupBasePath + "/cgroup.procs", std::to_string(pid));
+
+    // add pid limit
+    writeFile(cgroupBasePath + "/pids.max", "100");
 }
 
 void Container::writeFile(const std::string& path, const std::string& content)
